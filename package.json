@@ -1,13 +1,9 @@
 {
   "name": "ats-sqlite3",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "SQLite3 bindings for ATS2",
   "directories": {
     "test": "tests"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

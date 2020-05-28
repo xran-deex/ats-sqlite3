@@ -14,5 +14,5 @@ ATS_COMPILE (TEST_SRC
 	main.dats
 )
 ADD_EXECUTABLE(main ${TEST_SRC})
-target_link_libraries(main ats-sqlite)
+target_link_libraries(main ats-sqlite3 atslib)
 

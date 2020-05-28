@@ -23,6 +23,6 @@ set(CMAKE_C_FLAGS "-DATS_MEMALLOC_LIBC -D_DEFAULT_SOURCE")
 ATS_COMPILE (TEST_SRC
 	src/DATS/sqlite.dats
 	)
-ADD_LIBRARY(ats-sqlite ${TEST_SRC})
-target_link_libraries(ats-sqlite sqlite3)
+ADD_LIBRARY(ats-sqlite3 ${TEST_SRC})
+target_link_libraries(ats-sqlite3 sqlite3)
 

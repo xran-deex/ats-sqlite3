@@ -40,4 +40,6 @@ fn column_text{n:nat}(!sqlite3_stmt1, i: int(n)): constchar = "mac#sqlite3_colum
 fn bind_text(stmt: !sqlite3_stmt1, idx: int, string, int, ptr): int = "mac#sqlite3_bind_text"
 fn bind_int(stmt: !sqlite3_stmt1, idx: int, int): int = "mac#sqlite3_bind_int"
 
-fn{a:vt@ype} to_type(name: string, value: string): a 
+fn{a:vt@ype} stmt_to_type(stmt: !sqlite3_stmt1): a 
+
+fn{a:vt@ype} query_to_list(db: !sqlite3_ptr1, sql: string): List_vt(a)
